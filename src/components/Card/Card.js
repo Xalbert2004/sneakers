@@ -44,7 +44,7 @@ export default function Card({id, title, imageUrl, price, onPlus, onFavorite, fa
             ) : (
             <>
             {onFavorite && <div className={styles.favorite} onClick={onClickFavorite}>
-                <img src={isfavorite ? "img/liked.png" : "img/unliked.svg" } alt="Favorite" />
+                <img src={isfavorite ? "/img/liked.png" : "/img/unliked.svg" } alt="Favorite" />
             </div>}
             <img width="100%" height={135} src={imageUrl} alt="Sneakers"></img>
             <h5>{title}</h5>
@@ -54,7 +54,7 @@ export default function Card({id, title, imageUrl, price, onPlus, onFavorite, fa
                 <b>{price} руб.</b>
             </div>
                 {onPlus && <img className={styles.plus} width={11} height={11} 
-                    src={isItemAdded(id) ? "img/btn-checked.svg" : "img/btn-plus.svg" } 
+                    src={isItemAdded(id) ? "/img/btn-checked.svg" : "/img/btn-plus.svg" } 
                     alt="Plus" 
                     onClick={onClickPlus}
                     />}
