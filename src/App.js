@@ -26,7 +26,7 @@ function App() {
           axios.get('https://6348738e0b382d796c71f850.mockapi.io/Cart'),
           axios.get('https://6348738e0b382d796c71f850.mockapi.io/favorites'),
           axios.get('https://6348738e0b382d796c71f850.mockapi.io/items')
-        ])
+        ]);
         // const cartResponse = await axios.get('https://6348738e0b382d796c71f850.mockapi.io/Cart');  
         // const favoritesResponse = await axios.get('https://6348738e0b382d796c71f850.mockapi.io/favorites');
         // const itemsResponse = await axios.get('https://6348738e0b382d796c71f850.mockapi.io/items');
@@ -116,7 +116,7 @@ function App() {
         <Header onClickCart={() => setCardOpened(true)} />
         
         <Routes>
-          <Route exact path="/" element={<Home 
+          <Route exact path="" element={<Home 
             items={items} 
             cartItems={cartItems}
             searchValue={searchValue} 
@@ -130,11 +130,11 @@ function App() {
             
           </Route>
 
-          <Route exact path="/favorites" 
+          <Route exact path="favorites" 
               element={<Favorites />}>
           </Route>
 
-          <Route exact path="/orders" 
+          <Route exact path="orders" 
               element={<Orders/>}>
           </Route>
         </Routes>
