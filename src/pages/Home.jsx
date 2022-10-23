@@ -29,8 +29,8 @@ export default function Home({searchValue,
         <div className="d-flex align-center justify-between mb-40">
           <h1>{ searchValue ? `Поиск по запросу: "${searchValue}"` : "Все крассовки" }</h1>
           <div className="search-block d-flex">
-            <img src="/img/search.svg" alt="Search" />
-            {searchValue && <img onClick={() => setSearchValue("")} className="clear cu-p" src="/img/btn-remove.svg" alt="Clear" />}
+            <img src="img/search.svg" alt="Search" />
+            {searchValue && <img onClick={() => setSearchValue("")} className="clear cu-p" src="img/btn-remove.svg" alt="Clear" />}
             <input placeholder="Поиск" value={searchValue} onChange={onChangeSearchInput} />
           </div>
         </div>
